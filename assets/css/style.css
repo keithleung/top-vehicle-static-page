@@ -7,6 +7,10 @@
 
 /*font face*/
 @font-face {
+  font-family: "DIN-Condensed-Bold";
+  src: url('/fonts/DIN Condensed Bold.ttf') format('truetype');
+}
+@font-face {
   font-family: "Sentinel-Black";
   src: url('/fonts/Sentinel-Black.ttf') format('truetype');
 }
@@ -50,15 +54,20 @@
   font-family: "Sentinel-Black";
   src: url('/fonts/Sentinel-Black.ttf') format('truetype');
 }
-
+span.italic {
+  font-family: "Sentinel-BookItalic";
+}
+p {
+  font-family: "Sentinel-Book";
+}
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color:#000;
   background-color: transparent;
-  font-family: "Sentinel-Bold";
+  font-family: "Sentinel-Book";
 }
 .nav-pills .nav-link{
  color:#aaa; 
- font-family: "Sentinel-Bold";
+ font-family: "Sentinel-Book";
 }
 .tab-content {
   padding: .5rem 1rem;
@@ -90,7 +99,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Sentinel-Light";
+  font-family: "DIN-Condensed-Bold";
 }
 
 /*--------------------------------------------------------------
@@ -226,12 +235,17 @@ section {
 .header-scrolled > div > .navbar > ul > li > a {
   color:#000;
 }
+.header-scrolled > div > a img {
+  content: url('/assets/img/logo_black.png') !important;
+  min-height:40px;
+}
 .header .logo {
   line-height: 0;
 }
 .header .logo img {
-  /* max-height: 40px; */
+  max-height: 80px;
   margin-right: 6px;
+  content: url('/assets/img/logo_write.png');
 }
 .header .logo span {
   font-size: 30px;
@@ -250,6 +264,7 @@ section {
 */
 .navbar {
   padding: 0;
+  
 }
 .navbar ul {
   margin: 0;
@@ -269,7 +284,7 @@ a.sub-menu {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Sentinel-Light";
+  font-family: "Sentinel-Book";
   font-size: 16px;
   font-weight: 700;
   color: #fff;
@@ -282,7 +297,7 @@ a.sub-menu {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #000;
+  color: #FFF;
   text-decoration: underline;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
@@ -536,6 +551,7 @@ a.sub-menu {
 }
 .contactus-btn a{
   color:#000;
+  font-family: "Sentinel-BookItalic";
 }
 .contactus-btn {
   border-bottom:1px solid;
