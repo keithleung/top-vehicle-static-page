@@ -63,11 +63,14 @@ p {
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color:#000;
   background-color: transparent;
-  font-family: "Sentinel-Book";
+  font-family: "DIN-Condensed-Bold";
 }
 .nav-pills .nav-link{
  color:#aaa; 
- font-family: "Sentinel-Book";
+ font-family: "DIN-Condensed-Bold";
+ font-size:30px;
+ padding:0.5rem 0.5rem;
+ 
 }
 .tab-content {
   padding: .5rem 1rem;
@@ -225,7 +228,7 @@ section {
 .header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  padding: 25px 0;
 }
 .header.header-scrolled {
   background: #eae6dd;
@@ -544,7 +547,7 @@ a.sub-menu {
 --------------------------------------------------------------*/
 .about .content {
   background-color: transparent;
-  padding: 40px;
+  padding: 0 40px;
 }
 .contactus {
   padding:20px 0;
