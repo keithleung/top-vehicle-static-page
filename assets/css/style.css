@@ -60,6 +60,9 @@ span.italic {
 p {
   font-family: "Sentinel-Book";
 }
+h1 {
+  font-size:55px;
+}
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color:#000;
   background-color: transparent;
@@ -88,7 +91,7 @@ p {
 body {
   font-family: "Sentinel-Black";
   background-color: #eae6dd;
-  color: #444444;
+  color: #000;
 }
 
 a {
@@ -230,10 +233,13 @@ section {
   z-index: 997;
   padding: 25px 0;
 }
+.header div {
+  align-items: flex-start !important;
+}
 .header.header-scrolled {
   background: #eae6dd;
-  padding: 15px 0;
-  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+  padding: 25px 0;
+  /* box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1); */
 }
 .header-scrolled > div > .navbar > ul > li > a {
   color:#000;
@@ -248,6 +254,7 @@ section {
 .header .logo img {
   max-height: 80px;
   margin-right: 6px;
+  margin-left:8px;
   content: url('/assets/img/logo_write.png');
 }
 .header .logo span {
@@ -286,7 +293,8 @@ a.sub-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  /* padding: 10px 0 10px 30px; */
+  padding:0 0 10px 30px;
   font-family: "Sentinel-Book";
   font-size: 16px;
   font-weight: 700;
@@ -302,6 +310,9 @@ a.sub-menu {
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #FFF;
   text-decoration: underline;
+  text-underline-offset:10px;
+  /* border-bottom: #FFF solid 2px;
+  padding-left:0; */
 }
 .navbar .getstarted, .navbar .getstarted:focus {
   background: #4154f1;
@@ -545,6 +556,9 @@ a.sub-menu {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  padding-bottom:0;
+}
 .about .content {
   background-color: transparent;
   padding: 0 40px;
@@ -558,7 +572,7 @@ a.sub-menu {
 }
 .contactus-btn {
   border-bottom:1px solid;
-  padding-bottom:20px;
+  padding-bottom:5px;
   font-family: "Sentinel-LightItalic";
 }
 .about h3 {
