@@ -81,7 +81,7 @@
 .tab-pane {
   overflow: scroll;
   direction: rtl;
-  height:400px;
+  height:4c00px;
   padding: .5rem 1rem;
 }
 .tab-pane p{
@@ -266,14 +266,14 @@ section {
 .header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 25px 0;
+  padding: 40px 0;
 }
 .header div {
   align-items: flex-start !important;
 }
 .header.header-scrolled {
   background: #eae6dd;
-  padding: 25px 0;
+  padding: 40px 0;
   /* box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1); */
 }
 .header-scrolled > div > .navbar > ul > li > a {
