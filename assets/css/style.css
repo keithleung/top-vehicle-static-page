@@ -54,6 +54,39 @@
   font-family: "Sentinel-Black";
   src: url('/fonts/Sentinel-Black.ttf') format('truetype');
 }
+
+.tab-pane::-webkit-scrollbar {
+  width: 1px;
+}
+
+.tab-pane::-webkit-scrollbar-button:vertical {
+  border-width: 8px 8px 0 8px;
+  border-color: #555555 transparent transparent transparent;
+}
+.tab-pane::-webkit-scrollbar-corner {
+  background-color:transparent;
+
+}
+.tab-pane::-webkit-scrollbar-track:vertical {
+  box-shadow: inset 0 0 1px #000;
+}
+ 
+.tab-pane::-webkit-scrollbar-thumb {
+  background-color: #000;
+  outline: 1px solid #000;
+}
+.about-img {
+  /* padding-right:20px; */
+}
+.tab-pane {
+  overflow: scroll;
+  direction: rtl;
+  height:400px;
+  padding: .5rem 1rem;
+}
+.tab-pane p{
+  direction: ltr;
+}
 span.italic {
   font-family: "Sentinel-BookItalic";
 }
@@ -62,6 +95,8 @@ p {
 }
 h1 {
   font-size:55px;
+  line-height:1;
+  margin-bottom:0;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color:#000;
@@ -76,7 +111,7 @@ h1 {
  
 }
 .tab-content {
-  padding: .5rem 1rem;
+  /* padding: .5rem 1rem; */
 }
 .nav-link {
   color:#000;
@@ -254,7 +289,6 @@ section {
 .header .logo img {
   max-height: 80px;
   margin-right: 6px;
-  margin-left:8px;
   content: url('/assets/img/logo_write.png');
 }
 .header .logo span {

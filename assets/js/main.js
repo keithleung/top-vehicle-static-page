@@ -5,6 +5,12 @@
 * License: https://bootstrapmade.com/license/
 */
 
+function changeImg (item){
+  // console.log(item);
+  var id = item.split("/")[5];
+  console.log(id);
+  document.getElementById('about-main-img').src = 'assets/img/'+id;
+}
 function checkTag (item){
   var id = item.split("#")[1];
   document.getElementById('tab-image').src = 'assets/img/'+id+'.png';
