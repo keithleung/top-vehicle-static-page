@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 80px 0;
   overflow: hidden;
 }
 
@@ -266,14 +266,14 @@ section {
 .header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 40px 0;
+  padding: 70px 0;
 }
 .header div {
   align-items: flex-start !important;
 }
 .header.header-scrolled {
   background: #eae6dd;
-  padding: 40px 0;
+  padding: 70px 0;
   /* box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1); */
 }
 .header-scrolled > div > .navbar > ul > li > a {
@@ -344,7 +344,7 @@ a.sub-menu {
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #FFF;
   text-decoration: underline;
-  text-underline-offset:10px;
+  text-underline-offset:5px;
   /* border-bottom: #FFF solid 2px;
   padding-left:0; */
 }
@@ -419,25 +419,29 @@ a.sub-menu {
 */
 .mobile-nav-toggle {
   color: #012970;
-  font-size: 28px;
+  font-size: 40px;
   cursor: pointer;
   display: none;
   line-height: 0;
   transition: 0.5s;
+  padding-left:40px;
 }
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: #000;
 }
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
   }
-
+  .logo-toggle {
+    display:none !important;
+  }
   .navbar ul {
     display: none;
   }
 }
+
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -445,7 +449,7 @@ a.sub-menu {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(1, 22, 61, 0.9);
+  /* background: rgba(1, 22, 61, 0.9); */
   transition: 0.3s;
 }
 .navbar-mobile .mobile-nav-toggle {
@@ -598,7 +602,7 @@ a.sub-menu {
   padding: 0 40px;
 }
 .contactus {
-  padding:20px 0;
+  padding:40px 0;
 }
 .contactus-btn a{
   color:#000;
@@ -622,6 +626,7 @@ a.sub-menu {
 }
 .about p {
   margin: 15px 0 30px 0;
+  font-size: 13px;
   line-height: 24px;
 }
 .about .btn-read-more {
