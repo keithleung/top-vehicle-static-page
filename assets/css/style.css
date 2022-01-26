@@ -81,7 +81,7 @@
 .tab-pane {
   overflow: scroll;
   direction: rtl;
-  height:4c00px;
+  height:400px;
   padding: .5rem 1rem;
 }
 .tab-pane p{
@@ -321,7 +321,7 @@ section {
   position: relative;
 }
 a.sub-menu {
-  color:#000 !important;
+  /* color:#000 !important; */
 }
 .navbar a, .navbar a:focus {
   display: flex;
@@ -343,7 +343,7 @@ a.sub-menu {
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #FFF;
-  text-decoration: underline;
+  text-decoration: underline 1px;
   text-underline-offset:5px;
   /* border-bottom: #FFF solid 2px;
   padding-left:0; */
@@ -369,8 +369,8 @@ a.sub-menu {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #eae6dd;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  /* background: #eae6dd; */
+  /* box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25); */
   transition: 0.3s;
   border-radius: 4px;
 }
@@ -378,7 +378,7 @@ a.sub-menu {
   min-width: 200px;
 }
 .navbar .dropdown ul a {
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   font-size: 15px;
   text-transform: none;
   font-weight: 600;
@@ -626,7 +626,7 @@ a.sub-menu {
 }
 .about p {
   margin: 15px 0 30px 0;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 24px;
 }
 .about .btn-read-more {
