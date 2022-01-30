@@ -7,13 +7,15 @@
 
 function changeImg (item){
   // console.log(item);
-  var id = item.split("/")[5];
-  console.log(id);
+  var id = item.src.split("/")[5];
+  var position = item.className.split(" ")[0];
+  var mainImg = document.getElementById('about-main-img').src;
   document.getElementById('about-main-img').src = 'assets/img/'+id;
+  document.getElementById(position).src = mainImg;
 }
 function checkTag (item){
   var id = item.split("#")[1];
-  document.getElementById('tab-image').src = 'assets/img/'+id+'.png';
+  document.getElementById('tab-image').src = 'assets/img/'+id+'.jpg';
 }
 (function() {
   "use strict";

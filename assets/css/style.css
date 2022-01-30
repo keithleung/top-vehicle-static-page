@@ -283,6 +283,9 @@ section {
   content: url('/assets/img/logo_black.png') !important;
   min-height:40px;
 }
+.header-scrolled > div > .navbar > ul > .dropdown > ul > li > .sub-menu {
+  color:#000 !important;
+}
 .header .logo {
   line-height: 0;
 }
@@ -321,6 +324,7 @@ section {
   position: relative;
 }
 a.sub-menu {
+  padding-left:45px !important;
   /* color:#000 !important; */
 }
 .navbar a, .navbar a:focus {
@@ -328,7 +332,7 @@ a.sub-menu {
   align-items: center;
   justify-content: space-between;
   /* padding: 10px 0 10px 30px; */
-  padding:0 0 10px 60px;
+  padding:0 0 0 60px;
   font-family: "Sentinel-Book";
   font-size: 14px;
   font-weight: 700;
@@ -365,7 +369,7 @@ a.sub-menu {
   left: 14px;
   top: calc(100% + 30px);
   margin: 0;
-  padding: 10px 0;
+  padding: 0 0;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
@@ -387,7 +391,7 @@ a.sub-menu {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #000;
+  color: #FFF;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -431,6 +435,14 @@ a.sub-menu {
 }
 
 @media (max-width: 991px) {
+  .about .content {
+    /* background-color: transparent; */
+    padding: 0 35px !important;
+    /* padding-left:0; */
+  }
+  #about-main-img {
+    display: none !important;
+  }
   .mobile-nav-toggle {
     display: block;
   }

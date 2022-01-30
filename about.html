@@ -41,12 +41,13 @@
 <body>
   <!-- ======= Header ======= -->
   <header id="header1" class="header fixed-top header-scrolled">
-    <div style="padding-left:0;" class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <!-- <div style="padding-left:0;" class="container-fluid container-xl d-flex align-items-center justify-content-between"> -->
+    <div style="padding-left:0;" class="row gx-0 d-flex align-items-center justify-content-between">
       <i class="bi bi-list mobile-nav-toggle"></i>
-      <a href="index.html" class="logo-toggle logo d-flex align-items-center">
+      <a href="index.html" class="offset-lg-1 col-lg-4 logo-toggle logo d-flex align-items-center">
         <img style="margin-left:0">
       </a>
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="col-md-4 offset-md-3 navbar">
         
         <ul>
           
@@ -93,8 +94,8 @@
               <p><span class="italic">Top Vehicle Management's professional team</span> is entrusted with providing the utmost attention to vehicles under our care, ensuring they are at all times ready to be enjoyed should the owner desire.</p>
               <div class="text-center text-lg-start">
                 <div class="row">
-                  <img class="col-12 col-lg-4 about-img"  src="assets/img/about3.jpg" onclick="changeImg(this.src)">
-                  <img class="col-12 col-lg-4 about-img"  src="assets/img/about4.jpg" onclick="changeImg(this.src)">
+                  <img id="position1" class="position1 col-12 col-lg-4 about-img"  src="assets/img/about3.jpg" onclick="changeImg(this)">
+                  <img id="position2" class="position2 col-12 col-lg-4 about-img"  src="assets/img/about4.jpg" onclick="changeImg(this)">
                 </div>
               </div>
               <div class="contactus">
@@ -105,7 +106,7 @@
           </div>
 
           <div class="col-lg-7 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img id="about-main-img" src="assets/img/about1.png" class="img-fluid" alt="">
+            <img id="about-main-img" src="assets/img/about1.jpg" class="img-fluid" alt="">
           </div>
           
         </div>
