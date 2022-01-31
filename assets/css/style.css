@@ -54,6 +54,9 @@
   font-family: "Sentinel-Black";
   src: url('/fonts/Sentinel-Black.ttf') format('truetype');
 }
+.img-fluid{
+  width:100%;
+}
 
 .tab-pane::-webkit-scrollbar {
   width: 1px;
@@ -81,7 +84,7 @@
 .tab-pane {
   overflow: scroll;
   direction: rtl;
-  height:400px;
+  /* height:500px; */
   padding: .5rem 1rem;
 }
 .tab-pane p{
@@ -111,6 +114,7 @@ h1 {
  
 }
 .tab-content {
+
   /* padding: .5rem 1rem; */
 }
 .nav-link {
@@ -147,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
+  padding: 85px 0;
   overflow: hidden;
 }
 
@@ -311,7 +315,7 @@ section {
 */
 .navbar {
   padding: 0;
-  
+  justify-content: center;
 }
 .navbar ul {
   margin: 0;
@@ -637,10 +641,15 @@ a.sub-menu {
   font-weight: 700;
   color: #012970;
 }
-.about p {
+.about p, .about, .ul {
   margin: 15px 0 30px 0;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
+}
+.about, .ul {
+  font-family: "Sentinel-Book";
+  direction:ltr;
+
 }
 .about .btn-read-more {
   line-height: 0;
