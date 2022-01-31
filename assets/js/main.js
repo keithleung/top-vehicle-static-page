@@ -15,6 +15,7 @@ function changeImg (item){
 }
 function checkTag (item){
   var id = item.split("#")[1];
+  // if(id)
   document.getElementById('tab-image').src = 'assets/img/'+id+'.jpg';
 }
 (function() {
