@@ -53,10 +53,10 @@
           <i class="bi mobile-nav-toggle bi-x"></i>
           <li><a class="nav-link scrollto" href="about.html">About</a></li>
           <li class="scrollto dropdown"><a class="nav-link" href="services.html"><span>Services</span></a>
-            <ul>
-              <li><a class="sub-menu" onclick="checkTag('#storage')">Storage</a></li>
-              <li><a class="sub-menu" onclick="checkTag('#workshop')">Workshop</a></li>
-              <li><a class="sub-menu" onclick="checkTag('#detailing')">Detailing</a></li>
+            <ul class="nav nav-pills" >
+              <li><a class="sub-menu pointer" data-bs-toggle="pill" href="#storage" onclick="checkTag(this.href)">Storage</a></li>
+              <li><a class="sub-menu pointer" data-bs-toggle="pill" href="#workshop" onclick="checkTag(this.href)">Workshop</a></li>
+              <li><a class="sub-menu pointer" data-bs-toggle="pill" href="#detailing" onclick="checkTag(this.href)">Detailing</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
@@ -85,21 +85,20 @@
           <div class="offset-lg-1 col-lg-4 d-flex flex-column" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
               <h1>SERVICE</h1>
-              <ul class="nav nav-pills" style="padding-bottom:45px">
+              <ul id="tab-list" class="nav nav-pills" style="padding-bottom:45px">
                 <li>
-                  <a class="tab-info nav-link active" style="padding-left:0" data-bs-toggle="pill" href="#storage" onclick="checkTag(this.href)">STORAGE</a>
+                  <a id="storage-tab" class="tab-info nav-link active" style="padding-left:0" data-bs-toggle="pill" href="#storage" onclick="checkTag(this.href)">STORAGE</a>
+                </li>
+                <li  class="nav-link" style="padding:0.5rem 0">/</li>
+                <li>
+                  <a id="workshop-tab" class="tab-info nav-link" data-bs-toggle="pill" href="#workshop" onclick="checkTag(this.href)">WORKSHOP</a>
                 </li>
                 <li class="nav-link" style="padding:0.5rem 0">/</li>
                 <li>
-                  <a class="tab-info nav-link" data-bs-toggle="pill" href="#workshop" onclick="checkTag(this.href)">WORKSHOP</a>
-                </li>
-                <li class="nav-link" style="padding:0.5rem 0">/</li>
-                <li>
-                  <a class="tab-info nav-link" data-bs-toggle="pill" href="#detailing" onclick="checkTag(this.href)">DETAILING</a>
+                  <a id="detailing-tab"class="tab-info nav-link" data-bs-toggle="pill" href="#detailing" onclick="checkTag(this.href)">DETAILING</a>
                 </li>
               </ul>
               <div class="tab-content">
-
                 <div class="tab-pane fade show active" id="storage">
                   <p>
                     The sotrage service at <span class="italic">Top Vehicle Management</span> is second to none and has been conceived to offer vehicle owners and collectors total peace of mind.
@@ -162,6 +161,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

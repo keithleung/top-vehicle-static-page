@@ -16,15 +16,18 @@ function changeImg (item){
 function checkTag (item){
   var id = item.split("#")[1];
   // if(id)
+  $('#tab-list a').removeClass("active");
+  $('#'+id+'-tab').addClass("active");
   document.getElementById('tab-image').src = 'assets/img/'+id+'.jpg';
 }
+
+
 (function() {
   "use strict";
 
   /**
    * Easy selector helper function
    */
-  
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {

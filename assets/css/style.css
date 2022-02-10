@@ -86,6 +86,7 @@
   direction: rtl;
   height:600px;
   padding: .5rem 1rem;
+  margin-left:-1rem;
 }
 .tab-pane p{
   direction: ltr;
@@ -367,6 +368,7 @@ a.sub-menu {
   color: #fff;
   background: #5969f3;
 }
+.pointer {cursor: pointer;}
 .navbar .dropdown ul {
   display: block;
   position: absolute;
