@@ -54,6 +54,13 @@
   font-family: "Sentinel-Black";
   src: url('/fonts/Sentinel-Black.ttf') format('truetype');
 }
+.desktop{
+  display:block;
+}
+.mobile {
+  display: none;
+}
+
 .img-fluid{
   width:100%;
 }
@@ -264,6 +271,7 @@ section {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+  
 }
 /*--------------------------------------------------------------
 # Header
@@ -441,11 +449,10 @@ a.sub-menu {
   color: #000;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .about .content {
-    /* background-color: transparent; */
     padding: 0 35px !important;
-    /* padding-left:0; */
+    
   }
   #about-main-img {
     display: none !important;
@@ -459,7 +466,7 @@ a.sub-menu {
   .navbar ul {
     display: none;
   }
-}
+} */
 
 .navbar-mobile {
   position: fixed;
@@ -579,10 +586,31 @@ a.sub-menu {
     background-attachment: fixed;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
+  .tab-content {
+    padding-bottom:20px;
+    height:400px;
+  }
+  .sub-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .thumbnail{
+    padding-bottom:40px;
+  } 
   .hero {
     height: auto;
     padding: 120px 0 60px 0;
+  }
+  .hero-index {
+    padding:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+
+  }
+  .hero-index-img {
+    margin-top:0 !important;
   }
   .hero .hero-img {
     text-align: center;
@@ -590,6 +618,12 @@ a.sub-menu {
   }
   .hero .hero-img img {
     width: 80%;
+  }
+  .desktop{
+    display:none;
+  }
+  .mobile {
+    display: block;
   }
 }
 @media (max-width: 768px) {
