@@ -589,7 +589,10 @@ a.sub-menu {
 @media (max-width: 1200px) {
   .tab-content {
     padding-bottom:20px;
-    height:400px;
+    height:auto;
+  }
+  .tab-pane {
+    height:auto;
   }
   .sub-menu {
     display: flex;
