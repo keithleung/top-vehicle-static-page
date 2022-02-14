@@ -587,6 +587,9 @@ a.sub-menu {
   }
 }
 @media (max-width: 1200px) {
+  .navbar a {
+    padding: 0 0 0 50px;
+  }
   .tab-content {
     padding-bottom:20px;
     height:auto;
